@@ -4,7 +4,7 @@ namespace CleanetCode.TodoList.CLI.Operations;
 
 public class CreateNewUserOperation: IOperation
 {
-    public string Name { get; set; }
+    public string Name { get; }
 
     public void Execute()
     {
