@@ -1,3 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using CleanetCode.TodoList.CLI.Operations;
 
-Console.WriteLine("Hello, World!");
+IOperation[] operations = new IOperation[]
+{
+    new LoginUserOperation(),
+    new CreateNewUserOperation()
+};
+
+foreach (var operation in operations)
+{
+    operation.Execute();
+
+    if (operation is LoginUserOperation)
+    {
+        operation.Execute(); 
+    }
+}
