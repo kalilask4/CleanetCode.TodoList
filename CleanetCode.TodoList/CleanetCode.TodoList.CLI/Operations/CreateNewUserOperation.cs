@@ -8,7 +8,6 @@ public class CreateNewUserOperation: IOperation
 {
     public string Name => "Create new user";
 
-
     public void Execute()
     {
         Console.Write("Введите ваш email: "); //на домашку - проверка валидности email

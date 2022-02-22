@@ -19,7 +19,6 @@ public class Menu
             IOperation operation = _operations[i];
             operationNames.Add($"{i} - {operation.Name}");
         }
-
         return operationNames.ToArray();
     }
 

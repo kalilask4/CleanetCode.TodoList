@@ -32,6 +32,5 @@ public class Application
                 _menu.Enter(operationNumber);
             }
         }
-        
     }
 }

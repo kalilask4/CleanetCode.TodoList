@@ -19,7 +19,6 @@ public partial class LoginUserOperation: IOperation
 
         }
         
-
         Console.WriteLine("User logged in");
     }
 }
