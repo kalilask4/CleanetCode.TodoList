@@ -4,7 +4,8 @@ namespace CleanetCode.TodoList.CLI.Operations;
 
 public class CreateNewUserOperation: IOperation
 {
-    public string Name { get; }
+    public string Name => "Create new user";
+
 
     public void Execute()
     {

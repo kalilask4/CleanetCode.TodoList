@@ -2,7 +2,7 @@ namespace CleanetCode.TodoList.CLI.Operations;
 
 public partial class LoginUserOperation: IOperation
 {
-    public string Name { get; }
+    public string Name => "Login into the system";
 
     public void Execute()
     {

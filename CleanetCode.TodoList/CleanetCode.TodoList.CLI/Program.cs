@@ -1,17 +1,12 @@
-﻿using CleanetCode.TodoList.CLI.Operations;
+﻿using CleanetCode.TodoList.CLI;
+using CleanetCode.TodoList.CLI.Operations;
 
 IOperation[] operations = new IOperation[]
 {
     new LoginUserOperation(),
     new CreateNewUserOperation()
+    
 };
-
-foreach (var operation in operations)
-{
-    operation.Execute();
-
-    if (operation is LoginUserOperation)
-    {
-        operation.Execute(); 
-    }
-}
+Menu menu = new Menu(operations);
+Application application = new Application(menu);
+application.Run();

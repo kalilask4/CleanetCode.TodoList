@@ -11,6 +11,6 @@ public class Application
     public void Run()
     {
         string[] operationNames = _menu.GetOperationNames();
-        Console.WriteLine(string.Join(", ", operationNames));
+        Console.WriteLine(string.Join("\n", operationNames));
     }
 }
