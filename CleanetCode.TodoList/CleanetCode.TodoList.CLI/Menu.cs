@@ -22,4 +22,13 @@ public class Menu
 
         return operationNames.ToArray();
     }
+
+    public void Enter(int operationNumber)
+    {
+        if (operationNumber < 0 || operationNumber >= _operations.Length)
+        {
+            return;
+        }
+        _operations[operationNumber].Execute();
+    }
 }
